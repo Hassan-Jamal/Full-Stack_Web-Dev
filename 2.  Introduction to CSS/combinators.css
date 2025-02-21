@@ -1,3 +1,11 @@
+h1,h2,h3,.borderImage{
+    color: greenyellow;
+    text-shadow: 2px 2px 2px black;
+    font-family: sans-serif;
+    line-height: 10px;
+    border: dashed
+}
+
 ul li{
     color: red;
     font-size: medium;
