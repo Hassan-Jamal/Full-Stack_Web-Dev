@@ -1,0 +1,12 @@
+h1{
+    color: aquamarine;
+    border: dashed;
+}
+h2{
+    color: #2a3193;
+    border-radius: inherit;
+}
+p{
+    range: infinite;
+    position: relative;
+}
