@@ -1,0 +1,26 @@
+html{
+    font-family: sans-serif, serif, "Times New Roman"; 
+}
+body{
+    background-color: #444;
+    text-align: center;
+}
+h1,h2,h3{
+    color: #ffffff;
+    line-height: 1rem;
+    font-style: italic;
+}
+h2{
+    font-size: 20px;
+    font-style: normal;
+}
+.borderImage{
+    border: dashed 2px blue;
+}
+a{
+    color: yellow;
+    font-size: 20px;
+    word-spacing: 5px;
+    text-decoration:underline;
+    
+}
