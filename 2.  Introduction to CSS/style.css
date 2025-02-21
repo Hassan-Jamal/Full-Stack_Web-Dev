@@ -1,0 +1,18 @@
+body{
+    background-color: #cc99ff;
+}
+h1{
+    color: red;
+    align-content: center;
+}
+.sqaure{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: auto;
+}
+#circle{
+    color: darked;
+    font-size: 40px;  
+    border: dotted;
+}
