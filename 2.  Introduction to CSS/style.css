@@ -16,3 +16,15 @@ h1{
     font-size: 40px;  
     border: dotted;
 }
+.container{
+    background: linear-gradient(to left, #00ccff,#b3f0ff);
+    color: blue;
+    border: dotted;
+}
+h2{
+    text-shadow: 2px 2px 5px black;
+}
+h3{
+    color: rgb(0,204,255);
+    text-shadow: 1px 2px 2px darkblue;
+}
