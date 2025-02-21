@@ -1,5 +1,8 @@
 body{
-    background-color: #cc99ff;
+   /* background-color: #cc99ff;*/
+    background-image:url(crazy.jpg);
+    background-repeat:no-repeat;
+    background-size:cover; 
 }
 h1{
     color: red;
@@ -7,12 +10,12 @@ h1{
 }
 .sqaure{
     width: 100px;
-    height: 100px;
+    height: 60px;
     background-color: blue;
     margin: auto;
 }
 #circle{
-    color: darked;
+    color: Blue;
     font-size: 40px;  
     border: dotted;
 }
@@ -27,4 +30,9 @@ h2{
 h3{
     color: rgb(0,204,255);
     text-shadow: -1px -2px 2px darkblue;
+}
+.borderImage{
+    border: 2px solid red;
+    border-right: dashed green;
+    
 }
