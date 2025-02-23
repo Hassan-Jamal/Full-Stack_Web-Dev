@@ -96,10 +96,12 @@ ul.topnav li.dropdownIcon {
     display: none;
 }
 
+/* Section Gradient */
 #section-1-gradient {
     background: linear-gradient(blue, red, green);
 }
 
+/* Box */
 div.box {
     text-align: center;
     background-color: #fff;
@@ -110,6 +112,21 @@ div.box {
                 0 2px 3px 0 rgba(0, 0, 0, .1);
 }
 
+/* Logo icon inside box */
+div.box .icon {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100px; /* Adjust this value as needed */
+}
+
+div.box .icon img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Button styling */
 button {
     font-size: 32px;
     font-weight: 700;
@@ -126,6 +143,7 @@ button.learnmore {
     margin: auto;
 }
 
+/* Left and Right Columns */
 div.leftSide-col {
     margin-left: 30%; 
 }
@@ -134,6 +152,7 @@ div.rightSide-col {
     margin-left: 15%;
 }
 
+/* Headings */
 h1.large {
     color: #fff;
     font-size: 56px;
@@ -146,11 +165,12 @@ h1.section2Header {
     text-align: center;
 }
 
+/* Form headings */
 form h2 {
     color: #fff;
 }
 
-/* Combine selectors for text and password inputs */
+/* Input styling for text and password fields */
 input[type="text"],
 input[type="password"] {
     font-size: 20px;
@@ -160,7 +180,7 @@ input[type="password"] {
     border-radius: 10px;
 }
 
-/* Mobile */
+/* Mobile Styles */
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
