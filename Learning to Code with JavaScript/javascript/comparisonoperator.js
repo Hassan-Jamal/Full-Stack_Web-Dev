@@ -17,17 +17,19 @@ else {
     console.log("Account Balance is Not enough!!!");
 }
 
-// == operator
-var var1 = 3;
+// ==, !== , === operator
+var var1 = "3";
 var var2 = "3";
 if (var1==var2){
     console.log("These are the same.but may or may not their types.");
+}
+else if (var1 !== var2){
+    console.log("These are not equal with !== operator");
 }
 else{
     console.log("These are not the same..."); 
 }
 
-// === operator
-if(var1===var2){
+if (var1===var2){
     console.log("These are the same even their types.");  //if var2="3" it will be printed in console.
 }
