@@ -1,0 +1,58 @@
+#############################################
+# Git Basics Commands
+#############################################
+
+# 1. Initialize a new Git repository
+git init
+# This command creates a new .git directory in your project, starting version control.
+
+# 2. Check the current status of your repository
+git status
+# Shows which changes have been staged, which haven’t, and which files aren’t being tracked.
+
+# 3. Add files to the staging area
+git add filename.txt
+# Adds a specific file to the staging area.
+
+git add .
+# Adds all changes (new, modified, and deleted files) to the staging area.
+
+# 4. Commit staged changes
+git commit -m "Your commit message here"
+# Records the changes in the repository with a message describing the update.
+
+# 5. View commit history
+git log
+# Displays a list of all commits in the current branch with details like commit ID and message.
+
+# 6. Check differences between changes
+git diff
+# Shows the unstaged changes between your working directory and the last commit.
+git diff --staged
+# Shows differences between staged changes and the last commit.
+
+# 7. Manage branches
+git branch
+# Lists all branches in your repository.
+git branch new-branch
+# Creates a new branch named 'new-branch'.
+git checkout new-branch
+# Switches to the 'new-branch'.
+git checkout -b new-branch
+# Creates and switches to 'new-branch' in one step.
+
+# 8. Merge branches
+git checkout main
+# Switch to the branch you want to merge into.
+git merge new-branch
+# Merges 'new-branch' into your current branch.
+
+# 9. Synchronize with a remote repository
+git pull origin main
+# Fetches and merges changes from the 'main' branch of the remote repository into your current branch.
+git push origin main
+# Pushes your local commits from the 'main' branch to the remote repository.
+
+#############################################
+# End of Git Basics Commands
+#############################################
