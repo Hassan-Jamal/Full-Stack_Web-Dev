@@ -4,6 +4,7 @@
 //    console.log(students[index]);
 //}
 
+
 var students = [];
 function student (first,last,age){
     this.firstName=first;
