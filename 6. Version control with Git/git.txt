@@ -1,0 +1,11 @@
+Version Control:
+A system to record every change you make so you can always revert to 
+a previous "snapshot" of your work.
+
+Push:
+Upload your local changes to a remote repository—like sharing your
+latest story chapter online.
+
+Pull:
+Download changes from the remote repository to update your local copy—like
+getting the newest version of a shared document.
