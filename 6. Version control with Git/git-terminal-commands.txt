@@ -1,0 +1,77 @@
+#############################################
+# Git Terminal Commands for Windows (Git Bash)
+#############################################
+
+# 1. Changing Directories
+# -------------------------
+# Show current directory
+pwd
+
+# List contents (optional)
+ls
+
+# Change to a directory named "folder"
+cd folder
+
+# Go up one level
+cd ..
+
+# Go to the home directory
+cd ~
+
+# Go to the root directory
+cd /
+
+#############################################
+# 2. Copying & Renaming Files
+# ---------------------------
+# Copy a file to a new file
+cp source.txt destination.txt
+
+# Copy a directory and its contents recursively
+cp -r source_directory/ destination_directory/
+
+# Rename (or move) a file
+mv oldname.txt newname.txt
+
+# Move a file to a different directory (also renames if needed)
+mv filename.txt /path/to/target_directory/
+
+#############################################
+# 3. Creating Directories & Files
+# --------------------------------
+# Create a single directory
+mkdir myDirectory
+
+# Create nested directories (parent and child)
+mkdir -p parentDirectory/childDirectory
+
+# Create an empty file (or update its timestamp if it exists)
+touch myFile.txt
+
+# Create a file with initial content
+echo "Hello, World!" > greeting.txt
+
+#############################################
+# 4. Deleting Files & Directories
+# --------------------------------
+# Delete a single file
+rm filename.txt
+
+# Delete multiple files
+rm file1.txt file2.txt
+
+# Delete an empty directory
+rmdir directoryName
+
+# Delete a directory and all its contents recursively
+rm -r directoryName
+
+# Use interactive mode to confirm deletion
+rm -ri directoryName
+
+#############################################
+# Note:
+# These commands work in Git Bash, which provides a Unix-like
+# environment on Windows. They also work in other Unix-based systems.
+#############################################
