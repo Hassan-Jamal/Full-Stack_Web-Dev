@@ -15,10 +15,35 @@ body.signin-body{
 img.signin-img{
     padding: 0 2rem 2rem;
     margin: dispaly;
-    display: block;
     width: 70%;
+    display: block;
 }
 
 form.signin-form{
     max-width: 35opx;
 }
+
+button.signin-btn{
+    color: #ffffff;
+    background-color: midnightblue;
+    width: 100%;
+    margin: 0.1rem;
+}
+
+a.create-new-account{
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
