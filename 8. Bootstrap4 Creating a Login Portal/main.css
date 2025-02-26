@@ -15,7 +15,7 @@ body.signin-body{
 img.signin-img{
     padding: 0 2rem 2rem;
     margin: dispaly;
-    width: 70%;
+    width: 100%;
     display: block;
 }
 
@@ -27,7 +27,6 @@ button.signin-btn{
     color: #ffffff;
     background-color: midnightblue;
     width: 100%;
-    margin: 0.1rem;
 }
 
 a.create-new-account{
