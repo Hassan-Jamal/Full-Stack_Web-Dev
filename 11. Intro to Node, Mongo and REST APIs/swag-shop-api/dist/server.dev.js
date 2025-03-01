@@ -14,6 +14,8 @@ var Product = require("./model/product");
 
 var WishList = require("./model/wishlist");
 
+var product = require("./model/product");
+
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({
   extended: false
@@ -29,6 +31,17 @@ app.post("/products", function (request, response) {
       });
     } else {
       response.send(savedProduct);
+    }
+  });
+});
+app.get('/products', function (request, response) {
+  product.find({}, function (err, products) {
+    if (err) {
+      response.status(500).send({
+        error: "Could not fetch the product"
+      });
+    } else {
+      response.send(products);
     }
   });
 });
