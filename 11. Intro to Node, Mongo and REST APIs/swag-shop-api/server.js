@@ -10,6 +10,19 @@ var WishList = require("./model/wishlist");
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
 
+app.post("/products", function (request, response) {
+  var product = new product();
+  product.title = product.body.title;
+  product.price = product.body.price;
+  product.save(function (err, savedProduct) {
+    if (err) {
+      response.status(500).send({ error: "Could not save the product" });
+    } else {
+      response.send(savedProduct);
+    }
+  });
+});
+
 app.listen(3000, function () {
   console.log("Swag API running on port 3000....");
 });
