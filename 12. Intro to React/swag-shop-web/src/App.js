@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import HttpService from './services/http-service';
+
+const http = new HttpService();
 
 function App() {
+  constructor(props){
+    super(props);
+    http.getProducts();
+  }
+
   return (
     <div className="App">
       <header className="App-header">
