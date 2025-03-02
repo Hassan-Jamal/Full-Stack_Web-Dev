@@ -1,68 +1,44 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import HttpService from './services/http-service';
-import Product from './product/product';
-const http = new HttpService();
+import React from "react";
+import Product from "./product/product"; // Import from the product folder
+import "./product/product.css"; // Import CSS for styling
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      products: []
-    };
+const products = [
+  {
+    id: 1,
+    name: "Cool T-Shirt",
+    price: "$25",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuuEJbsfqQmkWbVuivr7eVOkehbZIQ6SPfag&s",
+  },
+  {
+    id: 2,
+    name: "Stylish Jacket",
+    price: "$60",
+    image:
+      "https://www.starkids.pk/cdn/shop/products/13_d93d39c6-33df-4cd3-a0e0-efb158a7de78.webp?v=1708147600",
+  },
+  {
+    id: 3,
+    name: "Trendy Sneakers",
+    price: "$80",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKs2P0HbpCSEQUzw2WhafTv5bQOrxUq_wOUg&s",
+  },
+];
 
-    // Bind the loadData function
-    this.loadData = this.loadData.bind(this);
-  }
-
-  componentDidMount() {
-    this.loadData();
-  }
-
-  loadData() {
-    http.getProducts()
-      .then(data => {
-        this.setState({ products: data });
-      })
-      .catch(error => {
-        console.error("Error fetching products:", error);
-      });
-  }
-
-  render() {
-    const { products } = this.state;
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <div>
-            <h2>Products</h2>
-            <ul>
-              {products.length > 0 ? (
-                products.map((product, index) => (
-                  <li key={index}>{JSON.stringify(product)}</li>
-                ))
-              ) : (
-                <li>No products loaded</li>
-              )}
-            </ul>
-          </div>
-        </header>
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="product-container">
+      {products.map((item) => (
+        <Product
+          key={item.id}
+          name={item.name}
+          price={item.price}
+          image={item.image}
+        />
+      ))}
+    </div>
+  );
+};
 
 export default App;
