@@ -1,14 +1,35 @@
-import React from 'react';
-import './navbar.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
-const Navbar = ({ wishlistCount, cartCount }) => {
+const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>🛒 Swag Shop</h1>
-      <div className="nav-icons">
-        <span>Wishlist ({wishlistCount})</span>
-        <span>🛍 Cart ({cartCount})</span>
+      <div className="logo">
+        <Link to="/">🛒 Swag Shop</Link>
       </div>
+      <ul className="nav-links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/products">Products</Link>
+        </li>
+        <li>
+          <Link to="/wishlist">Wishlist</Link>
+        </li>
+        <li>
+          <Link to="/cart">Cart</Link>
+        </li>
+        <li className="dropdown">
+          <button className="dropbtn">Profile ▼</button>
+          <div className="dropdown-content">
+            <Link to="/profile">My Profile</Link>
+            <Link to="/orders">My Orders</Link>
+            <Link to="/logout">Logout</Link>
+          </div>
+        </li>
+      </ul>
     </nav>
   );
 };

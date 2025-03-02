@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  /* Hero Section */
+  .home-header {
+    background: url("https://source.unsplash.com/1600x900/?shopping,store") no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .hero-buttons button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .shop-now {
+    background: #ff5733;
+    color: white;
+  }
+  
+  .shop-now:hover {
+    background: #e64a1b;
+  }
+  
+  .explore {
+    background: #333;
+    color: white;
+  }
+  
+  .explore:hover {
+    background: #222;
+  }
+  
+  /* Featured Categories */
+  .featured-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .featured-section h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .category-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .category-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .category-card h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Promo Section */
+  .promo-section {
+    text-align: center;
+    padding: 50px;
+    background: #ff5733;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  .promo-section h2 {
+    font-size: 2rem;
+  }
+  
+  .promo-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .shop-sale {
+    background: white;
+    color: #ff5733;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .shop-sale:hover {
+    background: #f2f2f2;
+  }
+  

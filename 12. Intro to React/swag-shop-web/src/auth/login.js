@@ -16,7 +16,7 @@ const Login = () => {
     if (validUser) {
       localStorage.setItem("loggedInUser", JSON.stringify(validUser));
       setMessage("✅ Login successful! Redirecting...");
-      setTimeout(() => (window.location.href = "/profile"), 1500);
+      setTimeout(() => (window.location.href = "/home"), 1500);
     } else {
       setMessage("❌ Invalid email or password.");
     }
