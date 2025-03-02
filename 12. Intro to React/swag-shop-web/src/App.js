@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HttpService from './services/http-service';
-
+import Product from './product/product';
 const http = new HttpService();
 
 class App extends Component {
